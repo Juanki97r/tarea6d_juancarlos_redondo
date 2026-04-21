@@ -63,6 +63,14 @@ public class Vehiculo {
 
     public void setVehicle_license_plate(String vehicle_license_plate) {
         this.vehicle_license_plate = vehicle_license_plate;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculo [vehicle_make=" + vehicle_make + ", vehicle_model=" + vehicle_model + ", vehicle_year="
+                + vehicle_year + ", vehicle_vin=" + vehicle_vin + ", vehicle_color=" + vehicle_color
+                + ", vehicle_license_plate=" + vehicle_license_plate + "]";
     }   
+    
     
 }

@@ -31,6 +31,7 @@ public class LeerCsv {
         try (CSVReader reader = new CSVReader(new FileReader(archivo))) {
             String[] linea;
             // Lee línea por línea
+            reader.readNext(); //salta el encabezado
             while ((linea = reader.readNext()) != null) {
                 if (linea.length == 6) { // Asegura que hay 6 campos
                     String make = linea[0];
